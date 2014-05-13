@@ -7,7 +7,6 @@ function recall = test_all_methods(Xtraining, Xtest, WtrueTestTraining, para, me
 % LSH  (Locality Sensitive Hashing)
 % ITQ  (Gong et al. CVPR 2011)
 % SITQ (Gong et al. NIPS 2012)
-% SH   (Weiss et al. NIPS 2008)
 % SKLSH(Raginsky and Lazebnik NIPS 2009)
 % Note that methods implemented here are for comparing the recall
 % not the computational time
