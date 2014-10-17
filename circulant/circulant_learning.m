@@ -2,7 +2,7 @@ function [B, model] = circulant_learning(X, para)
 % CBE-opt
 % X training data
 % model.r optimized circulant vector
-% model.bounulli random bounulli vector
+% model.bernoulli random bernoulli vector
 % B CBE code for X
 
 %N = size(X,1);
@@ -14,7 +14,7 @@ rr(rr <= 0 ) = -1;
 for i = 1:size(X,1)
     X(i,:) = X(i,:).*rr; 
 end
-model.bounulli = rr;
+model.bernoulli = rr;
 
 
 if ~isfield(para, 'bit')

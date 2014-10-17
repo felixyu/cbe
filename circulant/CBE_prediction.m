@@ -4,7 +4,7 @@ function B = CBE_prediction(model, X)
 
 % flipping the signs, this could be optimized
 for i = 1:size(X,1)
-    X(i,:) = X(i,:).*model.bounulli; 
+    X(i,:) = X(i,:).*model.bernoulli; 
 end
 
 r = model.r;
