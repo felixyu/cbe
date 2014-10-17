@@ -8,5 +8,5 @@ function model = circulant_rand(d)
     rr = randn(1,d);
     rr(rr > 0) = 1;
     rr(rr <= 0 ) = -1;
-    model.bernoulli = rr;
+    model.bounulli = rr;
 end
